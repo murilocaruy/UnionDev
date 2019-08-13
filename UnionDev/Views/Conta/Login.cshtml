@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Home/LayoutMain.cshtml";
+}
+
+    <div class="jumbotron jumbotron-fluid" id="area-login">
+        <h1>CEAP - Área do Cliente</h1>
+        <div class="clear-loading spinner">
+            <span></span>
+        </div>
+        <div class="w3ls-login box box--big">
+
+            <form action="Verifica" method="post">
+                <div class="agile-field-txt">
+                    <label><i class="fa fa-user" aria-hidden="true"></i> Login </label>
+                    <input type="text" name="Nome" placeholder="Login do Usuário" required="" />
+                </div>
+                <div class="agile-field-txt">
+                    <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> Senha </label>
+                    <input type="password" name="Senha" placeholder="Senha do Usuário" required="" id="myInput" />
+                    <div class="agile_label">
+                        <input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
+                        <label class="check" for="check3">Mostrar Senha</label>
+                    </div>
+                    <div class="agile-right">
+                        <a href="#">Esqueceu a Senha?</a>
+                    </div>
+                </div>
+
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myInput");
+                        if (x.type === "password") {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+                    }
+                </script>
+
+                <input type="submit" value="LOGIN">
+            </form>
+        </div>
+
+        <!--copyright-->
+        <div class="copy-wthree">
+            <p>
+                © 2019 - UnionDev
+                <a href="" target="_blank"></a>
+            </p>
+        </div>
+        <!--//copyright-->
+
+    </div>
