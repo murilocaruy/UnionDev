@@ -47,5 +47,15 @@ namespace UnionDev.Controllers
 
             
         }
+
+        public ActionResult PainelControleCliente()
+        {
+            return View();
+        }
+
+        public ActionResult CadastroCandidatoCliente()
+        {
+            return View();
+        }
     }
 }
